@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Tebak Negara</title>
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>   
     <div class="disable " id="disable">
@@ -17,21 +20,21 @@
                     <div class="wrong">Salah: <span id="resWrong"></span>
                     </div>
                 </div>
-                <button onclick="popupRes()">Kembali</button>
+                <button onclick="popupRes()">Mulai Lagi</button>
             </div>
         </div>
     <main>
         <div class="title">
-            <h1>Game Tebak Negara</h1>
+            <h1> Tebak Negara</h1>
         </div>
-       <div id="container">
+       <div id="container" class="container">
 
        </div>
     
-        <form action="">
+        <form action="" autocomplete="off">
             <label for="user-input">Masukan Jawaban Anda disini</label>
             <input type="text" name="user-input" id="answer" onkeyup="handleInput(this)" placeholder=" " >
-            <a href="#" onclick="handleAnswer()">Jawab</a>
+            <div class="btn" href="#" onclick="handleAnswer()">Jawab</div>
         </form>
         <div class="result" id="result">
             
@@ -44,6 +47,10 @@
         </div>
      
     </main>
+    <footer>
+        <p>dibuat oleh kelompok 5</p>
+        <h3>Manajemen Inovasi</h3>
+    </footer>
 </body>
 <script src="./script/index.js"></script>
 </html>

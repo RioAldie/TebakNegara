@@ -1,4 +1,6 @@
-
+/* font font-family: 'Odibee Sans', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif */
 .disable{
     position: absolute;
     width: 100%;
@@ -12,12 +14,189 @@
     display: none;
 }
 .disable .popup{
-    width: 200px;
-    height: 200px;
-    background: #fff;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 200px;
-    
+    border-radius: 11px;
+    justify-content: space-around;
+    background: #9A0680;
+}
+.disable .popup h3{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 34px;
+    color: #fff;   
+}
+.disable .popup .score{
+    width: 230px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -25px;
+    justify-content: space-between;
+}
+.disable .popup button{
+    width: 280px;
+    height: 45px;
+    background: #191919;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+
+
 }
 .active{
     display: flex;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+body main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: #191919;
+    box-sizing: border-box;
+    padding: 20%;
+    align-items: center;
+}
+main .title{
+    color: #F10086;
+    width: 300px;
+    height: 130px;
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Odibee sans', cursive;
+    margin-top: -20px;
+}
+.container{
+    width: 325px;
+    height: 225px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px #9A0680;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+}
+form{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+form label{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+form input{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-self: center;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: solid 2px #F10086;
+    color: #fff;
+    background: #444444;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+form .btn{
+    width: 140px;
+    height: 45px;
+    align-self: center;
+    background: #F10086;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+main .score{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #fff;
+    align-items: center;
+    margin-top: 20px;
+}
+.score .correct{
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    background: #03C4A1;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score .wrong{
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    background: #C70039;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    width: 300px;
+    height: 50px;margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+footer{
+    background: #4C0027;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
