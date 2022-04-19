@@ -1,0 +1,23 @@
+
+.disable{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 16, 16, 0.763);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+}
+.disable .popup{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    margin-top: 200px;
+    
+}
+.active{
+    display: flex;
+}

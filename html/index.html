@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Negara</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>   
+    <div class="disable " id="disable">
+            <div class="popup">
+                <h3>Game Selesai</h3>
+                <div class="score">
+                    <div class="correct">Benar: <span id="resCorrect"></span>
+                    </div>
+                    <div class="wrong">Salah: <span id="resWrong"></span>
+                    </div>
+                </div>
+                <button onclick="popupRes()">Kembali</button>
+            </div>
+        </div>
+    <main>
+        <div class="title">
+            <h1>Game Tebak Negara</h1>
+        </div>
+       <div id="container">
+
+       </div>
+    
+        <form action="">
+            <label for="user-input">Masukan Jawaban Anda disini</label>
+            <input type="text" name="user-input" id="answer" onkeyup="handleInput(this)" placeholder=" " >
+            <a href="#" onclick="handleAnswer()">Jawab</a>
+        </form>
+        <div class="result" id="result">
+            
+        </div>
+        <div class="score">
+            <div class="correct">Benar: <span id="correct"></span>
+            </div>
+            <div class="wrong">Salah: <span id="wrong"></span>
+            </div>
+        </div>
+     
+    </main>
+</body>
+<script src="../script/index.js"></script>
+</html>
