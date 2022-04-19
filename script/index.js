@@ -12,11 +12,58 @@ let allCountry;
 let scoreBenar = 0;
 let scoreSalah = 0;
 let soal = 1;
-
+const data = {"country": [{
+    "name": "Afrika Selatan",
+    "flag": "https://flagcdn.com/w20/za.png",
+    "id": "1"
+},{
+    "name": "Afrika Selatan",
+    "flag": "https://flagcdn.com/w20/za.png",
+    "id": "1"
+},
+{   
+    "name": "Macedonia",
+    "flag": "https://flagcdn.com/w20/mk.png",
+    "id": "2"
+},{
+    "name": "Wales",
+    "flag": "https://flagcdn.com/w20/gb-wls.png",
+    "id": "3"
+},{
+    "name": "Sudan",
+    "flag": "https://flagcdn.com/w20/sd.png",
+    "id": "4"
+},{
+    "name": "Qatar",
+    "flag": "https://flagcdn.com/w20/qa.png",
+    "id": "5"
+},{
+    "name": "Amerika Serikat",
+    "flag": "https://flagcdn.com/w20/us.png",
+    "id": "6"
+},{
+    "name": "Hongkong",
+    "flag": "https://flagcdn.com/w20/hk.png",
+    "id": "7"
+},{
+    "name": "Japan",
+    "flag": "https://flagcdn.com/w20/jp.png",
+    "id": "8"
+},{
+    "name": "Selandia Baru",
+    "flag": "https://flagcdn.com/w20/nz.png",
+    "id": "9"
+},{
+    "name": "Senegal",
+    "flag": "https://flagcdn.com/w20/sn.png",
+    "id": "10"
+},{
+    "name": "Indonesia",
+    "flag": "https://flagcdn.com/w20/id.png",
+    "id": "0"
+}]
+} 
 const country = async () =>{
-    const response = await fetch('../json/data.json');
-
-    let data = await response.json();
     let country = data.country;
     
     queryScoreBenar(scoreBenar);
@@ -26,7 +73,7 @@ const country = async () =>{
         question(1);
     }
 }
-country();
+
 
 const question = (soal) =>{
     const { name, flag} = allCountry[soal];
@@ -101,3 +148,4 @@ const createResult = (result) =>{
        
     }
 }
+country();
